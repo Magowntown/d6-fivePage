@@ -35,52 +35,52 @@ nav li a {
 
 .container {
     width: 50%;
-	margin: 50px auto;
-	padding: 20px;
-	background-color: white;
-	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-	text-align: center;
-	color: #663300;
+    text-align: center;
+    color: #663300;
 }
 
 form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 label {
-	display: block;
-	margin: 10px 0;
-	color: #333;
-	font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
 }
 
 input[type=text], input[type=email], input[type=password], select {
-	padding: 10px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	width: 100%;
-	box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
-	background-color: #663300;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	margin-top: 20px;
-	font-size: 16px;
+    background-color: #663300;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
 }
 
 input[type=submit]:hover {
-	background-color: #4d2600;
+    background-color: #4d2600;
 }
 
 footer {
@@ -107,33 +107,48 @@ footer a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-    .container {
-        width: 80%;
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: #f1f1f1;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("../images/teapot.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        margin: auto;
     }
 
-    footer {
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 480px) {
     nav {
         height: auto;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
-    
+
     nav li {
+        display: block;
         padding: 10px;
     }
-    
-    .container {
-        width: 90%;
+
+    header {
+        padding: 0.5rem;
     }
-    
-    input[type=submit] {
-        font-size: 14px;
+
+    .contactBox {
+        max-width: 100%;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav li {
+        padding: 5px;
+    }
+
+    input[type="submit"] {
+        padding: 0.4rem;
     }
 
     footer p {
